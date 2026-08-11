@@ -5,11 +5,11 @@ export function StatsWidget({ stats }: { stats: StatsResponse }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {/* Total thoughts */}
-      <div className="bg-bg-surface border border-border rounded-lg p-5">
-        <p className="text-text-muted text-xs font-medium uppercase tracking-wider mb-1">
+      <div className="bg-bg-surface border border-border rounded-lg p-5 transition-colors hover:border-border-strong">
+        <p className="ob1-section-label mb-1.5">
           Total Thoughts
         </p>
-        <p className="text-3xl font-bold text-text-primary">
+        <p className="text-3xl font-semibold tracking-tight text-text-primary">
           {stats.total_thoughts.toLocaleString()}
         </p>
         <p className="text-xs text-text-muted mt-1">
@@ -18,8 +18,8 @@ export function StatsWidget({ stats }: { stats: StatsResponse }) {
       </div>
 
       {/* Type distribution */}
-      <div className="bg-bg-surface border border-border rounded-lg p-5">
-        <p className="text-text-muted text-xs font-medium uppercase tracking-wider mb-3">
+      <div className="bg-bg-surface border border-border rounded-lg p-5 transition-colors hover:border-border-strong">
+        <p className="ob1-section-label mb-3">
           By Type
         </p>
         <div className="flex flex-wrap gap-2">
@@ -35,8 +35,8 @@ export function StatsWidget({ stats }: { stats: StatsResponse }) {
       </div>
 
       {/* Top topics */}
-      <div className="bg-bg-surface border border-border rounded-lg p-5">
-        <p className="text-text-muted text-xs font-medium uppercase tracking-wider mb-3">
+      <div className="bg-bg-surface border border-border rounded-lg p-5 transition-colors hover:border-border-strong">
+        <p className="ob1-section-label mb-3">
           Top Topics
         </p>
         <div className="space-y-1.5">

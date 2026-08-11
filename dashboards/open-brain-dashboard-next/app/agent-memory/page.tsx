@@ -103,7 +103,6 @@ export default async function AgentMemoryPage({
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
-          <span className="ob1-brand-kicker">Nate Jones Personal OB1</span>
           <p className="font-mono text-xs text-text-muted">
             {workspaceId}
             <span className="mx-2 text-text-muted/60">/</span>

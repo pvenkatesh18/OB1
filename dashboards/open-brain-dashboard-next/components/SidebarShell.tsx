@@ -33,7 +33,7 @@ export function SidebarShell() {
           <span className="block text-text-primary font-semibold text-base leading-tight tracking-tight">
             Open Brain
           </span>
-          <span className="ob1-brand-kicker">Nate B. Jones</span>
+          <span className="ob1-section-label">Second Brain</span>
         </div>
       </div>
 

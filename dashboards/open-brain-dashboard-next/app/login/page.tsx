@@ -42,7 +42,7 @@ export default async function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-transparent ml-0 px-4">
       <div className="ob1-login-panel w-full max-w-sm p-6">
         <div className="text-center mb-8">
-          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center border border-violet/35 bg-violet-surface p-3">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-lg border border-violet/30 bg-violet-surface p-3">
             <Image
               src="/brand/ob1-logo.png"
               alt=""
@@ -52,7 +52,6 @@ export default async function LoginPage() {
               className="h-full w-full object-contain"
             />
           </div>
-          <p className="ob1-brand-kicker mb-2">Nate B. Jones / OB1</p>
           <h1 className="text-2xl font-semibold text-text-primary">
             Open Brain
           </h1>

@@ -5,12 +5,13 @@ import Link from "next/link";
 import type { KanbanStatus } from "@/lib/types";
 import { KANBAN_STATUSES, KANBAN_LABELS } from "@/lib/types";
 
+// Same badge recipe as ThoughtCard: 10% tint, 20% border, muted label.
 const STATUS_COLORS: Record<string, string> = {
-  new: "bg-slate-500/15 text-slate-400 border-slate-500/20",
-  planning: "bg-violet/15 text-violet border-violet/20",
-  active: "bg-blue-500/15 text-blue-400 border-blue-500/20",
-  review: "bg-amber-500/15 text-amber-400 border-amber-500/20",
-  done: "bg-emerald-500/15 text-emerald-400 border-emerald-500/20",
+  new: "bg-white/5 text-text-secondary border-border",
+  planning: "bg-sky-400/10 text-sky-300/90 border-sky-400/20",
+  active: "bg-violet/10 text-violet border-violet/25",
+  review: "bg-amber-400/10 text-amber-300/90 border-amber-400/20",
+  done: "bg-white/5 text-text-muted border-border",
 };
 
 export function KanbanSummary() {
@@ -37,7 +38,7 @@ export function KanbanSummary() {
 
   if (isLoading) {
     return (
-      <div className="bg-bg-surface border border-border rounded-lg p-4">
+      <div className="bg-bg-surface border border-border rounded-lg p-5">
         <div className="h-4 w-32 bg-bg-hover rounded animate-pulse mb-3" />
         <div className="flex gap-2">
           {[1, 2, 3, 4, 5].map((i) => (
@@ -50,9 +51,9 @@ export function KanbanSummary() {
 
   return (
     <Link href="/kanban" className="block group">
-      <div className="bg-bg-surface border border-border rounded-lg p-4 hover:border-violet/30 transition-colors">
+      <div className="bg-bg-surface border border-border rounded-lg p-5 hover:border-border-strong transition-colors">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-lg font-medium">Workflow</h2>
+          <h2 className="text-base font-semibold text-text-primary">Workflow</h2>
           <span className="text-xs text-text-muted group-hover:text-violet transition-colors">
             Open workflow →
           </span>
