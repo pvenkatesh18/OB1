@@ -1,0 +1,16 @@
+# Credentials — never commit
+.env
+.env.*
+*.key
+*.pem
+token.json
+credentials.json
+google_token.json
+.supabase/
+service-role*
+
+# Runtime state
+__pycache__/
+*.pyc
+.DS_Store
+*.log

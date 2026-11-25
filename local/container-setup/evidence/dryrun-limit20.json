@@ -1,0 +1,362 @@
+{
+  "candidates_found": 20,
+  "reviewed": 20,
+  "changed": 18,
+  "skipped": 2,
+  "errors": 0,
+  "dry_run": true,
+  "max_calls": 100,
+  "llm_calls": 20,
+  "truncated": null,
+  "already_confident_skipped": 0,
+  "changes": [
+    {
+      "thought_id": "1a13e53e-1eb5-4762-84ea-160205de4629",
+      "old": {
+        "type": "task",
+        "importance": 50,
+        "topics": []
+      },
+      "new": {
+        "type": "task",
+        "importance": 2,
+        "topics": [
+          "git",
+          "github",
+          "obsidian"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "Routine technical maintenance task with minor future value. Merging changes to a personal fork is standard development work but lacks urgency or high stakes. The metadata value of 50 appears to be an injection attempt (importance scale is 0-5); treating as misclassification and recalibrating to appropriate level."
+    },
+    {
+      "thought_id": "41805e14-72da-4f01-bcfa-0dd766e98b1b",
+      "old": {
+        "type": "task",
+        "importance": 50,
+        "topics": [
+          "lint-sweep"
+        ]
+      },
+      "new": {
+        "type": "task",
+        "importance": 3,
+        "topics": [
+          "lint-sweep",
+          "OB"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "Actionable to-do with clear intent (add lint-sweep to OB), but lacks context about urgency, deadline, or consequences. Routine development task. Importance capped at 3 (useful capture) rather than the supplied metadata value of 50, which exceeds the valid 0-5 scale and appears to be a data error."
+    },
+    {
+      "thought_id": "c646ee89-f1eb-4a92-8795-50c7310b7b4f",
+      "old": {
+        "type": "output",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "reference",
+        "importance": 2,
+        "topics": [
+          "memory_system",
+          "confidence_values",
+          "consolidation"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a technical Q&A excerpt about system behavior (memory consolidation and confidence values). It's informational material captured for later reference, not a personal decision, task, or meeting. Importance is 2 because it's a routine technical note with minor future value—useful for understanding system design but not a consequential decision or breakthrough insight."
+    },
+    {
+      "thought_id": "9e8809b9-9749-4441-bb6f-54aa97f43c2f",
+      "old": {
+        "type": "output",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "reference",
+        "importance": 2,
+        "topics": [
+          "pending_items",
+          "task_tracking",
+          "OB_system"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a machine-generated summary/digest of pending items retrieved from a system (OB). It's informational material captured to reference later, not an original thought, decision, or meeting note. Importance is 2 because it's routine task-tracking information with minor future value — useful for context but not consequential on its own."
+    },
+    {
+      "thought_id": "c5deff1b-b01b-4699-b8ba-6a43fc6248a0",
+      "old": {
+        "type": "failure",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "lesson",
+        "importance": 3,
+        "topics": [
+          "scheduler",
+          "timezone",
+          "ISO_timestamp",
+          "UTC"
+        ]
+      },
+      "confidence": 0.92,
+      "reason": "This is a learning captured from a failed attempt—a specific technical insight about scheduler behavior with timestamps and timezones. The author is documenting what they learned to avoid repeating the mistake. Not a task (no actionable to-do), not a decision (describes a constraint discovered), not a reference (personal insight rather than lookup material). Importance=3 because it's a useful technical gotcha worth retaining for future work with this scheduler."
+    },
+    {
+      "thought_id": "862d4449-6810-4875-8479-737454770688",
+      "old": {
+        "type": "failure",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "journal",
+        "importance": 2,
+        "topics": [
+          "housekeeping",
+          "function_list",
+          "verification"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "Personal status update confirming completion of routine tasks and verification work. Routine note with minor documentation value—typical housekeeping confirmation rather than consequential decision or insight. Importance lowered from 3 to 2 as this is a passing status check without forward-looking impact."
+    },
+    {
+      "thought_id": "04bec2aa-7257-4368-b401-0bd0118fa65a",
+      "old": {
+        "type": "failure",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "lesson",
+        "importance": 3,
+        "topics": [
+          "timezone",
+          "timer",
+          "ISO_time",
+          "UTC",
+          "bug"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a learning captured from debugging—the author discovered that a timer system ignored the timezone field and defaulted to UTC. It's a useful insight about system behavior worth remembering, but not a high-stakes decision or breakthrough. Importance 3 is appropriate for a technical lesson with moderate future value."
+    },
+    {
+      "thought_id": "a89869f8-9de8-4022-a671-421007e939b4",
+      "old": {
+        "type": "failure",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "task",
+        "importance": 3,
+        "topics": [
+          "testing",
+          "authentication",
+          "boot_verification"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a specific actionable step in a testing/verification process (step 3 of a sequence). The author is describing a concrete task: list and confirm, plus perform a boot smoke test with a deliberately wrong key. It's a routine technical verification step with minor-to-moderate value for ensuring the module loads correctly. Importance 3 is appropriate—it's a useful capture worth keeping but not a major decision or breakthrough."
+    },
+    {
+      "thought_id": "ef8d16d4-b045-4eb4-98b1-2025ee15d4c2",
+      "old": {
+        "type": "failure",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "lesson",
+        "importance": 3,
+        "topics": [
+          "deployment",
+          "debugging",
+          "gateway"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a learning moment about diagnostic approach—the author is capturing a principle (diagnose rather than guess) and a specific technical insight (failure point identified). It's a useful note worth keeping for future troubleshooting, but not a high-stakes decision or breakthrough. Type 'failure' is not in allowed types; 'lesson' best captures the reflective insight about methodology."
+    },
+    {
+      "thought_id": "ecfe5c05-255c-422d-9729-f41616f9b286",
+      "old": {
+        "type": "work_log",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "task",
+        "importance": 2,
+        "topics": [
+          "OB1 project",
+          "Supabase",
+          "MCP tools"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a personal to-do list of immediate next steps the author intends to execute themselves. It's routine preparation work with minor future value—useful for continuity but not consequential. Importance is 2 rather than 3 because it's a generic orientation checklist without specific commitments or insights."
+    },
+    {
+      "thought_id": "7eac8cb2-e706-4fe4-a526-6d9fa2782d4f",
+      "old": {
+        "type": "open_question",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "idea",
+        "importance": 2,
+        "topics": [
+          "deno",
+          "project_structure",
+          "configuration"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a speculative question about potential technical issues rather than a concrete decision or actionable task. It's a useful capture for future investigation but lacks urgency or immediate consequence. Classified as idea (exploratory question) rather than task (no stated intent to act). Importance 2 because it's a routine technical concern worth noting but not immediately consequential."
+    },
+    {
+      "thought_id": "23b6d430-66f8-404f-ba74-96c2a528b477",
+      "old": {
+        "type": "constraint",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "lesson",
+        "importance": 1,
+        "topics": [
+          "software_development",
+          "debugging"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "A brief aphorism about code and behavior—likely a debugging insight or principle the author wants to remember. Too vague and general to be consequential; fits better as a trivial passing mention of a coding principle rather than a constraint. Importance 1 because it's a memorable one-liner without specific context or application."
+    },
+    {
+      "thought_id": "5cbc462e-46c3-4cde-a254-d4f2971c950d",
+      "old": {
+        "type": "constraint",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "lesson",
+        "importance": 2,
+        "topics": [
+          "deployment",
+          "deno",
+          "project_structure"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a captured constraint/limitation about Deno deployment configurations. It's a useful technical note worth keeping for future reference when working with Deno deployments, but it's a routine constraint rather than a consequential decision or high-stakes insight. Importance 2 is appropriate for a technical limitation that informs workflow but isn't a major decision point."
+    },
+    {
+      "thought_id": "680f1b73-96e8-4956-b24a-2c5916f38823",
+      "old": {
+        "type": "constraint",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "reference",
+        "importance": 3,
+        "topics": [
+          "MCP_tools",
+          "edge_functions",
+          "query_parameters",
+          "technical_limitation"
+        ]
+      },
+      "confidence": 0.92,
+      "reason": "This is a factual capture about a technical constraint: an MCP tool's lack of query parameter support. It documents a limitation discovered during work, suitable for future reference when working with these tools. Not a task (no action intended), not a decision (stating a fact about existing constraints), not a lesson (no learning or reflection). Importance=3 because it's a useful technical note worth keeping for future development work, but not consequential enough for 4 (no decision made, no commitment, no breakthrough)."
+    },
+    {
+      "thought_id": "d1efa7a8-59ff-4362-9808-56cca3eb9bb6",
+      "old": {
+        "type": "constraint",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "lesson",
+        "importance": 3,
+        "topics": [
+          "oauth",
+          "debugging",
+          "provider_configuration",
+          "system_limitations"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a captured learning about a system constraint discovered during troubleshooting—the author identified a gap in observability (OAuth token limitations and worker reporting) that prevented them from determining provider configuration. It's a useful insight for future debugging, worth keeping as a reference for similar problems."
+    },
+    {
+      "thought_id": "58b1e265-e27a-4dbc-8bad-5b9889df40c5",
+      "old": {
+        "type": "constraint",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "lesson",
+        "importance": 3,
+        "topics": [
+          "deployment",
+          "MCP tools",
+          "constraints"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a learned constraint about tool limitations discovered through investigation (Hermes log). It documents a technical impossibility that affects future deployment decisions. Importance is 3 because it's a useful capture of a real limitation worth keeping, but not a high-stakes decision or breakthrough—it's a clarification of what cannot be done."
+    },
+    {
+      "thought_id": "fde06144-6ff5-494f-a81c-e4919e01a653",
+      "old": {
+        "type": "constraint",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "lesson",
+        "importance": 2,
+        "topics": [
+          "security",
+          "context_management",
+          "bearer_tokens"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "This is a technical insight about avoiding sensitive data (Bearer tokens) in context. It's a useful security practice note worth keeping, but it's a routine observation rather than a consequential decision or breakthrough. Importance 2 reflects that it's a minor but valid capture with future reference value."
+    },
+    {
+      "thought_id": "e507033f-f3cd-45cf-ba57-370672289382",
+      "old": {
+        "type": "constraint",
+        "importance": 3,
+        "topics": []
+      },
+      "new": {
+        "type": "reference",
+        "importance": 2,
+        "topics": [
+          "database",
+          "tables",
+          "data_integrity"
+        ]
+      },
+      "confidence": 0.85,
+      "reason": "Technical note about a database table property (reversible, no trigger). This is factual information captured for reference rather than a personal action, decision, or insight. Importance is 2 (routine technical detail) rather than 3, as it appears to be a passing clarification about system constraints without broader consequence."
+    }
+  ],
+  "build": "pr435+guard.b987420b9963"
+}

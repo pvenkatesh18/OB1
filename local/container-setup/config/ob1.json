@@ -1,0 +1,10 @@
+{
+  "endpoint": "https://byawvafeuychywyigxsn.supabase.co/functions/v1/agent-memory-api",
+  "workspace_id": "default",
+  "project_id": null,
+  "auto_recall": true,
+  "auto_capture": true,
+  "max_recall_results": 10,
+  "default_confidence": 0.7,
+  "require_review_by_default": true
+}
